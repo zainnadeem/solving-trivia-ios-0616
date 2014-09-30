@@ -1,23 +1,17 @@
 ---
-tags:
+tags: arrays, iteration, challenge 
 languages: objc
 ---
 
-Manage Scheme > Share Scheme
-Edit the main Scheme
-Test -> Post-Actions -> Add Run Script Action
-Choose Provide build settings from man project
-
-```
-LOG_PATH=`echo "${BUILD_DIR}" | sed "s/Build\/Products/Logs\/Test/"`
-"${SRCROOT}/test_runner.sh" "$LOG_PATH" "${SRCROOT}"
-```
-DELETE THIS WHEN YOU DO THIS
-
 # solving-trivia
+
+Let's solve a trivia problem. Write code to algorithmically solve the following trivia questions!
 
 ## Instructions
 
-## Advanced
+  1. Write all of your code in the `applicationDidFinishLaunching` method.
+  2. What is the only state who's capital contains none of the characters as the state name. For example Alaska isn't the answer because Juneau and Alaska both have an A.
 
 ## Hints
+
+  * The word `split` may be helpful...
