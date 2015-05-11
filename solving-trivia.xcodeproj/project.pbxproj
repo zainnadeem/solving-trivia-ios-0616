@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1245ABDBDC24417EBAE26E87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F0F7179A22477AB280F236 /* main.m */; };
+		4119FCA523E97339CD0C8C0A /* libPods-unit_tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC87EE100C82D05B7A7C5DA /* libPods-unit_tests.a */; };
 		56360577974143E4B1C04611 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18FCBBA95B948D3989B3220 /* Foundation.framework */; };
 		749BBE7D305B4E29B4F3A991 /* FISAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 287369C61970455F92CDE01C /* FISAppDelegate.m */; };
+		E2D592C01B011E7000479820 /* FISAppDelegateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D592BE1B011E7000479820 /* FISAppDelegateSpec.m */; };
 		EA8128672C78484E92656646 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57F97384977A4C9488E4971D /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -32,8 +34,12 @@
 		553ECD4BC85B45C1B547B54A /* solving-trivia-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "solving-trivia-Info.plist"; sourceTree = "<group>"; };
 		57F97384977A4C9488E4971D /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		619C3910C20E4B3C8578BEDA /* solving-trivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "solving-trivia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7223F7D1CB2BA80D3B8AA8B4 /* Pods-unit_tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unit_tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests.release.xcconfig"; sourceTree = "<group>"; };
+		DDC87EE100C82D05B7A7C5DA /* libPods-unit_tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-unit_tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E18FCBBA95B948D3989B3220 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E221394682D9D2035025FAEA /* Pods-unit_tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unit_tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E27A263C5887481FB6A3E1BA /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
+		E2D592BE1B011E7000479820 /* FISAppDelegateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISAppDelegateSpec.m; sourceTree = "<group>"; };
 		FBF7884E2B64463AA2449230 /* solving-trivia-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "solving-trivia-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -42,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4119FCA523E97339CD0C8C0A /* libPods-unit_tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,9 +73,19 @@
 			path = "Other-Sources";
 			sourceTree = "<group>";
 		};
+		04A61B5482F450782946C2CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7223F7D1CB2BA80D3B8AA8B4 /* Pods-unit_tests.release.xcconfig */,
+				E221394682D9D2035025FAEA /* Pods-unit_tests.debug.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		0BD561D770CC48F0AAE71940 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				E2D592BE1B011E7000479820 /* FISAppDelegateSpec.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -80,6 +97,7 @@
 				CF37AB89E9164EAF9D5E94A0 /* UnitTests */,
 				DB2F39FCFE834FA68B851052 /* Frameworks */,
 				5F0D66AF9CBD4F9A9FA615F2 /* Products */,
+				04A61B5482F450782946C2CA /* Pods */,
 			);
 			indentWidth = 4;
 			sourceTree = "<group>";
@@ -144,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				44246B94037F40C2B3C9A5B9 /* iOS */,
+				DDC87EE100C82D05B7A7C5DA /* libPods-unit_tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -173,9 +192,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D36FC9DF9010414AA650B837 /* Build configuration list for PBXNativeTarget "UnitTests" */;
 			buildPhases = (
+				8C2E3845C121A27FBA2559BE /* Check Pods Manifest.lock */,
 				9FBB10CC3567462FA47CC715 /* Sources */,
 				231CB5E641D74DEAA6EEAD53 /* Frameworks */,
 				9033777940124F88A79D2786 /* Resources */,
+				3D6F056A36CEE3377294C29A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,6 +255,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3D6F056A36CEE3377294C29A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6C7132C67C4B45BCBDD11F69 /* Warn for TODO and FIXME comments */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -247,6 +283,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "KEYWORDS=\"TODO:|FIXME:|\\?\\?\\?:|\\!\\!\\!:\"\nFILE_EXTENSIONS=\"h|m|mm|c|cpp\"\nfind -E \"${SRCROOT}\" -ipath \"${SRCROOT}/pods\" -prune -o \\( -regex \".*\\.($FILE_EXTENSIONS)$\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | perl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"\n";
+		};
+		8C2E3845C121A27FBA2559BE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -264,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2D592C01B011E7000479820 /* FISAppDelegateSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +386,7 @@
 		};
 		63B827EF390B4B45B00FD14D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E221394682D9D2035025FAEA /* Pods-unit_tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/solving-trivia.app/solving-trivia";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -453,6 +506,7 @@
 		};
 		F12BC27F2EE148EF95CB647C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7223F7D1CB2BA80D3B8AA8B4 /* Pods-unit_tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/solving-trivia.app/solving-trivia";
 				FRAMEWORK_SEARCH_PATHS = (

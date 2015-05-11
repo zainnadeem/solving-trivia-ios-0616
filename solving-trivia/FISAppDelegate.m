@@ -7,10 +7,20 @@
 //
 
 #import "FISAppDelegate.h"
+
 @interface FISAppDelegate ()
 
 @end
 @implementation FISAppDelegate
+
+-(NSString*) solveTrivia
+{
+
+    // write your solution here!
+    
+    return @"";
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     return YES;
