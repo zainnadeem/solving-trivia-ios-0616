@@ -124,38 +124,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
-    NSArray *states = @[@"Alabama", @"Alaska", @"Arizona", @"Arkansas", @"California", @"Colorado", @"Connecticut", @"Delaware", @"Florida", @"Georgia", @"Hawaii", @"Idaho", @"Illinois", @"Indiana", @"Iowa", @"Kansas", @"Kentucky", @"Louisiana", @"Maine", @"Maryland", @"Massachusetts", @"Michigan", @"Minnesota", @"Mississippi", @"Missouri", @"Montana", @"Nebraska", @"Nevada", @"New Hampshire", @"New Jersey", @"New Mexico", @"New York", @"North Carolina", @"North Dakota", @"Ohio", @"Oklahoma", @"Oregon", @"Pennsylvania", @"Rhode Island", @"South Carolina", @"South Dakota", @"Tennessee", @"Texas", @"Utah", @"Vermont", @"Virginia", @"Washington", @"West Virginia", @"Wisconsin", @"Wyoming"];
-    NSArray *capitals = @[@"Montgomery",@"Juneau",@"Phoenix",@"Little Rock",@"Sacramento",@"Denver",@"Hartford",@"Dover",@"Tallahassee",@"Atlanta",@"Honolulu",@"Boise",@"Springfield",@"Indianapolis",@"Des Moines",@"Topeka",@"Frankfort",@"Baton Rouge",@"Augusta",@"Annapolis",@"Boston",@"Lansing",@"St. Paul",@"Jackson",@"Jefferson City",@"Helena",@"Lincoln",@"Carson City",@"Concord",@"Trenton",@"Santa Fe",@"Albany",@"Raleigh",@"Bismarck",@"Columbus",@"Oklahoma City",@"Salem",@"Harrisburg",@"Providence",@"Columbia",@"Pierre",@"Nashville",@"Austin",@"Salt Lake City",@"Montpelier",@"Richmond",@"Olympia",@"Charleston",@"Madison",@"Cheyenne"];
-
-    NSString *correctState = @"";
-    NSString *correctCapital = @"";
-    for (NSInteger i =0; i<[states count]; i++) {
-        NSString *state = states[i];
-        NSString *capital = capitals[i];
-        NSMutableArray *stateCharacters = [[NSMutableArray alloc] initWithCapacity:[state length]];
-        for (NSInteger j=0; j < [state length]; j++) {
-            NSString *ichar  = [NSString stringWithFormat:@"%c", [state characterAtIndex:j]];
-            [stateCharacters addObject:ichar];
-        }
-        NSMutableArray *capitalCharacters = [[NSMutableArray alloc] initWithCapacity:[capital length]];
-        for (NSInteger j=0; j < [capital length]; j++) {
-            NSString *ichar  = [NSString stringWithFormat:@"%c", [capital characterAtIndex:j]];
-            [capitalCharacters addObject:ichar];
-        }
-
-        BOOL found = YES;
-        for (NSInteger j=0; j < [stateCharacters count]; j++) {
-            if ([capitalCharacters containsObject:stateCharacters[j]]) {
-                found=NO;
-            }
-        }
-        if (found) {
-            correctState=state;
-            correctCapital=capital;
-        }
-    }
-
-    NSLog(@"%@ %@",correctState, correctCapital);
     return YES;
 }
 
