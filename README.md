@@ -1,7 +1,4 @@
----
-tags: arrays, iteration, challenge 
-languages: objc
----
+
 
 # solving-trivia
 
