@@ -1,21 +1,21 @@
----
-tags: arrays, iteration, challenge 
-languages: objc
----
+# Solving Trivia
 
-# solving-trivia
+## Objectives
 
-Let's solve a trivia problem. Write code to algorithmically solve the following trivia questions!
-
-#### Note: open the .xcworkspace, NOT the .xcodeproj
+1. Use Objective-C to solve a trivia problem.
 
 ## Instructions
 
-Write all of your code in the `solveTrivia` method. 
-It should return the answer to this trivia question:
+Fork and clone this lab.
 
-**What is the only state who's capital contains none of the characters as the state name?** (for example Alaska isn't the answer because Juneau and Alaska both have an A)
+Open the `solving-trivia.xcworkspace` file.  
+**Note:** *This is the workspace since this lab includes a test.*
 
-## Hints
+Write your solution in the `solveTrivia` method provided on `FISAppDelegate`. It should return an `NSString` that contains the answer to this trivia question:
 
-  * Is there a way to split a string into characters? 
+**What is the only state who's capital contains none of the characters as the state name?**  
+Example: Alaska isn't the answer because Juneau and Alaska both contain an A.
+
+##### Hints:
+*Is there a way to split a string into characters?*  
+*Does your comparison need to be case insensitive?*
