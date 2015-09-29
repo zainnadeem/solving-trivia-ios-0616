@@ -13,7 +13,7 @@ Open the `solving-trivia.xcworkspace` file.
 
 Write your solution in the `solveTrivia` method provided on `FISAppDelegate`. It should return an `NSString` that contains the answer to this trivia question:
 
-**What is the only state who's capital contains none of the characters as the state name?**  
+**What is the only state whose capital contains none of the characters as the state name?**  
 Example: Alaska isn't the answer because Juneau and Alaska both contain an A.
 
 ##### Hints:
