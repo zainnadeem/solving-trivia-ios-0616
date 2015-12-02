@@ -19,3 +19,5 @@ Example: Alaska isn't the answer because Juneau and Alaska both contain an A.
 ##### Hints:
 *Is there a way to split a string into characters?*  
 *Does your comparison need to be case insensitive?*
+
+<a href='https://learn.co/lessons/solving-trivia' data-visibility='hidden'>View this lesson on Learn.co</a>
