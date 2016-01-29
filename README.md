@@ -20,4 +20,4 @@ Example: Alaska isn't the answer because Juneau and Alaska both contain an A.
 *Is there a way to split a string into characters?*  
 *Does your comparison need to be case insensitive?*
 
-<a href='https://learn.co/lessons/solving-trivia' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/solving-trivia' title='Solving Trivia'>Solving Trivia</a> on Learn.co and start learning to code for free.</p>
